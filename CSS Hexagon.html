@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title>CSS Hexagon</title>
+	</head>
+	<style>
+		.hex {
+			float: left;
+			margin-left: 3px;
+			margin-bottom: -26px;
+		}
+		.hex-head{
+			width: 0;
+			border-bottom: 30px solid #6C6;
+			border-left: 52px solid transparent;
+			border-right: 52px solid transparent;
+		}
+		.hex-body{
+			width: 104px;
+			height: 60px;
+			background: #6C6;
+			text-align:center;
+			line-height:60px;
+			font-weight: bold;
+		}
+		.hex-tail{
+			width: 0;
+			border-top: 30px solid #6C6;
+			border-left: 52px solid transparent;
+			border-right: 52px solid transparent;
+		}
+		.hex-row {
+			clear: left;
+		}
+		.hex-row.even {
+			margin-left: 53px;
+		}
+		.hex-body.namediv{
+			margin-top:30px;
+			width:154px;
+			text-align:center;
+			line-height:60px;
+			font-weight: bold;
+			background-color:#FFF;
+		}
+	</style>
+	<body>
+		<div class="hex-row">
+			<div class="hex">
+				<div class="hex-body namediv">Name 1</div>
+			</div>
+			<div class="hex">
+				<div class="hex-head"></div>
+				<div class="hex-body">Icon 1</div>
+				<div class="hex-tail"></div>
+			</div>
+			<div class="hex">
+				<div class="hex-head"></div>
+				<div class="hex-body">Icon 2</div>
+				<div class="hex-tail"></div>
+			</div>
+			<div class="hex">
+				<div class="hex-body namediv">Name 2</div>
+			</div>
+		</div>
+
+		<div class="hex-row even">
+			<div class="hex" style="margin-left:-50px;">
+				<div class="hex-body namediv" style="width:100px;">Name 3</div>
+			</div>
+			<div class="hex">
+				<div class="hex-head"></div>
+				<div class="hex-body">Icon 3</div>
+				<div class="hex-tail"></div>
+			</div>
+			<div class="hex">
+				<div class="hex-head"></div>
+				<div class="hex-body">Icon 4</div>
+				<div class="hex-tail"></div>
+			</div>
+			<div class="hex">
+				<div class="hex-head"></div>
+				<div class="hex-body">Icon 5</div>
+				<div class="hex-tail"></div>
+			</div>
+			<div class="hex">
+				<div class="hex-body namediv" style="width:100px;">Name 4</div>
+			</div>
+		</div>
+		
+		<div class="hex-row">
+			<div class="hex">
+				<div class="hex-body namediv">Name 5</div>
+			</div>
+			<div class="hex">
+				<div class="hex-head"></div>
+				<div class="hex-body">Icon 6</div>
+				<div class="hex-tail"></div>
+			</div>
+			<div class="hex">
+				<div class="hex-head"></div>
+				<div class="hex-body">Icon 7</div>
+				<div class="hex-tail"></div>
+			</div>
+			<div class="hex">
+				<div class="hex-body namediv">Name 6</div>
+			</div>
+		</div>
+
+	</body>
+</html>
